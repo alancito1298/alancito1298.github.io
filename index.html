@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-windth initial-scale=1.0">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-windth initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title> Encriptador - Alan Amarillo</title>
     </head>
-    <header><div class="logo"><img src="img/logotipo.png" alt="logo"></div></header>
+    <header class="header"><div class="div__logo"><img src="img/logotipo.png" alt="logo" class="logo"></div></header>
     <body>
-        <div class="container">
-        <nav class="entrada">
-            <label for="entrada">Ingrese el texto aqui</label>
-            <textarea name="text" type="text" cols="30" rows="10" id="text" required class="textoencriptar"></textarea>
+        <section class="container">
+        
+            <article class="entrada">
+            <label for="entrada" class="titulo__entrada">Ingrese el texto aqui</label>
+            <input name="text" type="text" cols="30" rows="10" id="text" required class="textoencriptar">
+
+            </input>
             
             <div class="btn"><input type="button" class="btn-encriptar" value="Encriptar">
             <input type="button" class="btn-desencriptar" value="Desencriptar"> </div>
-        </nav>
+        </article>
         <main class="salida">
                     
-            <div class="resultado">
+            <section class="resultado">
                <div class="ocultar"> <h3>Mensaje Encriptado:</h3>
                 <p class="textoResultado"></p></div>
                 <div class="conteiner-munieco "><img src="img/Muneco.png" alt="Muneco"></div>
@@ -27,8 +31,8 @@
                 <div class="sec-copiar">
                 <input type="button" value="Copiar Mensaje" class="btn-copiar" id="boton-copiar">
                     </div>
-            </div>
-        </main></div>
+            </section>
+        </main></section>
 <footer class="footer"></footer>
 
         <script src="codigo.js"></script>
